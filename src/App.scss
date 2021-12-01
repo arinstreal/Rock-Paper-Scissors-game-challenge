@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700');
+
+:root {
+  --mobile: 375px;
+  --desktop: 1366px;
+  --bg-color: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+  --header-outline-color: hsl(217, 16%, 45%);
+  --score-text-color: hsl(229, 64%, 46%);
+  --white-color: #ffffff;
+  --dark-text-color: hsl(229, 25%, 31%);
+  --scissors-gradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+  --paperGradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
+  --rockGradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
+  --lizardGradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
+  --cyanGradient: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 600;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #203757, #141639);
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: 2px solid var(--header-outline-color);
+  color: #F8FBFF;
+  background-color: transparent;
+  box-shadow: none;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  border-radius: 10px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
