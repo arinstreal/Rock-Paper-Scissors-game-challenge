@@ -6,15 +6,19 @@ import RulesModal from "./Components/RulesModal/RulesModal";
 
 function App() {
   const [isOpenRulesModal, setIsOpenRulesModal] = useState(false);
+  const [score, setScore] = useState<number>(0);
 
   const handleRulesModal = () => {
-    setIsOpenRulesModal(prev => (!prev));
+    setIsOpenRulesModal(prev => !prev);
   }
+
+  const handleAddPoint = () => setScore(prev => (prev + 1));
+  const resetGame = () => setScore(0);
 
   return (
     <div className="app">
-      <ScorePanel score={12}/>
-      <SelectionPanel/>
+      <ScorePanel score={score}/>
+      <SelectionPanel addPoint={handleAddPoint} resetGame={resetGame}/>
       <div>
         <button onClick={handleRulesModal}>Rules</button>
       </div>

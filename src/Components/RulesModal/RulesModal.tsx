@@ -1,6 +1,7 @@
 import { FC } from "react";
 import styles from "./RulesModal.module.scss";
 import closeIcon from "../../images/icon-close.svg";
+import rules from "../../images/image-rules.svg";
 
 interface IRulesModal {
   isOpen?: boolean;
@@ -9,11 +10,12 @@ interface IRulesModal {
 
 const RulesModal: FC<IRulesModal> = ({isOpen, toggleClose}: IRulesModal) => {
   return (
-    <div className={`${styles.rulesModal} ${isOpen ? 'open' : ''}`}>
+    <div className={`${styles.rulesModal} ${isOpen ? styles.open : ''}`}>
       <div className={styles.content}>
         <div className={styles.header}>
-          <span>Rules</span><img alt="close" src={closeIcon}/>
+          <span>Rules</span><img className={styles.closeIcon} onClick={toggleClose} alt="close" src={closeIcon}/>
         </div>
+        <img alt="rules" src={rules}/>
       </div>
     </div>
   )

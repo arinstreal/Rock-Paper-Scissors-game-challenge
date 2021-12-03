@@ -1,21 +1,28 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import styles from "./SelectionPanel.module.scss";
-import bgTriangle from "../../images/bg-triangle.svg";
-import GestureWrapper from "../GestureWrapper/GestureWrapper";
+import { GESTURES_TYPES } from "../../constants";
+import SelectionMode from "./SelectionMode";
+import ResultsMode from "../ResultsMode/ResultsMode";
 
 interface ISelectionPanel {
-
+  addPoint: () => void;
+  resetGame: () => void;
 }
 
-const SelectionPanel: FC<ISelectionPanel> = ({}: ISelectionPanel) => {
+const SelectionPanel: FC<ISelectionPanel> = ({addPoint, resetGame}: ISelectionPanel) => {
+  const [userChoice, setUserChoice] = useState<GESTURES_TYPES | null>(null);
+
+  const handleResetUserChoice = () => {
+    setUserChoice(null);
+  }
+
   return (
     <div className={styles.selectionPanel}>
-      <div>
-        <img className="triangle" src={bgTriangle} alt="bgTriangle"/>
-        <GestureWrapper type="paper" position={{left: 0, top: 0}}/>
-        <GestureWrapper type="scissor" position={{top: 0, right: 0}}/>
-        <GestureWrapper type="rock" position={{bottom: 0, left: '30%'}}/>
-      </div>
+      {
+        userChoice ?
+          <ResultsMode userChoice={userChoice} resetUserChoice={handleResetUserChoice} addUserPoint={addPoint}/> :
+          <SelectionMode setUserChoice={setUserChoice}/>
+      }
     </div>
   )
 }

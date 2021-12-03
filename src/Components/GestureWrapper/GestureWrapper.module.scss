@@ -10,13 +10,32 @@
   //border: 24px solid orange;
   position: relative;
 
+
   &:before {
     width: 100%;
     height: 100%;
     content: '';
     position: absolute;
     border-radius: 50%;
-    background: radial-gradient(circle at 100%, hsl(39, 89%, 49%), hsl(39, 89%, 49%) 50%, hsl(40, 84%, 53%) 75%, hsl(40, 84%, 53%) 75%);
+  }
+
+  &.scissors:before {
+    background: radial-gradient(circle at 100%, var(--scissors-gradient-from), var(--scissors-gradient-from) 50%, var(--scissors-gradient-to) 75%, var(--scissors-gradient-to) 75%);
+  }
+
+  &.paper:before {
+    background: radial-gradient(circle at 100%, var(--paper-gradient-from), var(--paper-gradient-from) 50%, var(--paper-gradient-to) 75%, var(--paper-gradient-to) 75%);
+  }
+
+  &.rock:before {
+    background: radial-gradient(circle at 100%, var(--rock-gradient-from), var(--rock-gradient-from) 50%, var(--rock-gradient-to) 75%, var(--rock-gradient-to) 75%);
+  }
+
+  &.lizard:before {
+    background: radial-gradient(circle at 100%, var(--lizard-gradient-from), var(--lizard-gradient-from) 50%, var(--lizard-gradient-to) 75%, var(--lizard-gradient-to) 75%);
+  }
+  &.spock:before {
+    background: radial-gradient(circle at 100%, var(--spock-gradient-from), var(--spock-gradient-from) 50%, var(--spock-gradient-to) 75%, var(--spock-gradient-to) 75%);
   }
 
   &:after {

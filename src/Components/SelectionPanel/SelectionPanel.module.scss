@@ -1,24 +1,22 @@
-.selectionPanel {
-
-  //height: 305px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-
-  & > div {
-    background-image: url("../../images/bg-triangle.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    padding: 104px;
-
-    & > div {
-      position: absolute;
-
-      &:first-of-type {
-        top: 0;
-        left: 0;
-      }
-    }
-  }
-}
+//.selectionPanel {
+//  margin-top: 30px;
+//  display: flex;
+//  justify-content: center;
+//
+//  & > div {
+//    background-image: url("../../images/bg-triangle.svg");
+//    background-repeat: no-repeat;
+//    background-position: center;
+//    position: relative;
+//    padding: 104px;
+//
+//    & > div {
+//      position: absolute;
+//
+//      &:first-of-type {
+//        top: 0;
+//        left: 0;
+//      }
+//    }
+//  }
+//}
