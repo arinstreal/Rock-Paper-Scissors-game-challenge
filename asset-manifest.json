@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Rock-Paper-Scissors-game-challenge/static/css/main.e39ed6f3.chunk.css",
-    "main.js": "/Rock-Paper-Scissors-game-challenge/static/js/main.149504f1.chunk.js",
-    "main.js.map": "/Rock-Paper-Scissors-game-challenge/static/js/main.149504f1.chunk.js.map",
+    "main.css": "/Rock-Paper-Scissors-game-challenge/static/css/main.13ac530c.chunk.css",
+    "main.js": "/Rock-Paper-Scissors-game-challenge/static/js/main.1a5e97fe.chunk.js",
+    "main.js.map": "/Rock-Paper-Scissors-game-challenge/static/js/main.1a5e97fe.chunk.js.map",
     "runtime-main.js": "/Rock-Paper-Scissors-game-challenge/static/js/runtime-main.0ec23c3e.js",
     "runtime-main.js.map": "/Rock-Paper-Scissors-game-challenge/static/js/runtime-main.0ec23c3e.js.map",
-    "static/js/2.e15789d0.chunk.js": "/Rock-Paper-Scissors-game-challenge/static/js/2.e15789d0.chunk.js",
-    "static/js/2.e15789d0.chunk.js.map": "/Rock-Paper-Scissors-game-challenge/static/js/2.e15789d0.chunk.js.map",
+    "static/js/2.7b9013bf.chunk.js": "/Rock-Paper-Scissors-game-challenge/static/js/2.7b9013bf.chunk.js",
+    "static/js/2.7b9013bf.chunk.js.map": "/Rock-Paper-Scissors-game-challenge/static/js/2.7b9013bf.chunk.js.map",
     "static/js/3.368fa7f0.chunk.js": "/Rock-Paper-Scissors-game-challenge/static/js/3.368fa7f0.chunk.js",
     "static/js/3.368fa7f0.chunk.js.map": "/Rock-Paper-Scissors-game-challenge/static/js/3.368fa7f0.chunk.js.map",
     "index.html": "/Rock-Paper-Scissors-game-challenge/index.html",
-    "static/css/main.e39ed6f3.chunk.css.map": "/Rock-Paper-Scissors-game-challenge/static/css/main.e39ed6f3.chunk.css.map",
-    "static/js/2.e15789d0.chunk.js.LICENSE.txt": "/Rock-Paper-Scissors-game-challenge/static/js/2.e15789d0.chunk.js.LICENSE.txt",
+    "static/css/main.13ac530c.chunk.css.map": "/Rock-Paper-Scissors-game-challenge/static/css/main.13ac530c.chunk.css.map",
+    "static/js/2.7b9013bf.chunk.js.LICENSE.txt": "/Rock-Paper-Scissors-game-challenge/static/js/2.7b9013bf.chunk.js.LICENSE.txt",
     "static/media/SelectionPanel.module.scss": "/Rock-Paper-Scissors-game-challenge/static/media/bg-triangle.c0c30b56.svg",
     "static/media/icon-close.bde602ec.svg": "/Rock-Paper-Scissors-game-challenge/static/media/icon-close.bde602ec.svg",
     "static/media/icon-paper.8b57a6b1.svg": "/Rock-Paper-Scissors-game-challenge/static/media/icon-paper.8b57a6b1.svg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0ec23c3e.js",
-    "static/js/2.e15789d0.chunk.js",
-    "static/css/main.e39ed6f3.chunk.css",
-    "static/js/main.149504f1.chunk.js"
+    "static/js/2.7b9013bf.chunk.js",
+    "static/css/main.13ac530c.chunk.css",
+    "static/js/main.1a5e97fe.chunk.js"
   ]
 }
