@@ -16,15 +16,15 @@ const SelectionPanel: FC<ISelectionPanel> = ({addPoint, resetGame}: ISelectionPa
     setUserChoice(null);
   }
 
-  return (
-    <div className={styles.selectionPanel}>
-      {
-        userChoice ?
-          <ResultsMode userChoice={userChoice} resetUserChoice={handleResetUserChoice} addUserPoint={addPoint}/> :
-          <SelectionMode setUserChoice={setUserChoice}/>
-      }
-    </div>
+  if (userChoice) return (
+    <ResultsMode userChoice={userChoice} resetUserChoice={handleResetUserChoice} addUserPoint={addPoint}/>
   )
+  else
+    return (
+      <div className={styles.selectionPanel}>
+        <SelectionMode setUserChoice={setUserChoice}/>
+      </div>
+    )
 }
 
 export default SelectionPanel;

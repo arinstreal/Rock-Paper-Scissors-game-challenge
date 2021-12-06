@@ -49,7 +49,7 @@ const ResultsMode: FC<IResultsMode> = ({userChoice, resetUserChoice, addUserPoin
   }
 
   return (
-    <div>
+    <div className={styles.resultsMode}>
       <div>
         <span>You picked</span>
         <GestureWrapper type={userChoice}/>

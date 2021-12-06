@@ -19,7 +19,7 @@ function App() {
     <div className="app">
       <ScorePanel score={score}/>
       <SelectionPanel addPoint={handleAddPoint} resetGame={resetGame}/>
-      <div>
+      <div className="rules-wrapper">
         <button onClick={handleRulesModal}>Rules</button>
       </div>
       {isOpenRulesModal}
