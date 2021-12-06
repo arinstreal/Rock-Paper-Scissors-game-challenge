@@ -8,4 +8,23 @@
     background-color: #000000;
     opacity: 30%;
   }
+
+  .choiceWrapper {
+    margin-top: 64px;
+    span {
+      margin-bottom: 32px;
+      text-align: center;
+      display: block;
+    }
+  }
+  .resultWrapper {
+    margin: auto 32px 64px;
+    div:first-of-type {
+      color: var(--white-color);
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+  }
 }
