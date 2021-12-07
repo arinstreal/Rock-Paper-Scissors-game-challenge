@@ -60,9 +60,7 @@ const ResultsMode: FC<IResultsMode> = ({userChoice, resetUserChoice, addUserPoin
       </div>
       <div className={styles.choiceWrapper}>
         <span>The house picked</span>
-        {
-          botChoice ? <GestureWrapper type={botChoice}/> : <div className={styles.generateChoice}/>
-        }
+        <GestureWrapper type={botChoice}/>
       </div>
     </div>
   )

@@ -7,9 +7,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //border: 24px solid orange;
   position: relative;
 
+  &.generateChoice {
+    opacity: 30%;
+    background: transparent;
+    cursor: auto;
+    &:after {
+      background-color: #000000;
+    }
+  }
 
   &:before {
     width: 100%;

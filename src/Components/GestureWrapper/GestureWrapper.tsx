@@ -13,7 +13,7 @@ interface IPosition {
 }
 
 interface IGestureWrapper {
-  type: GESTURES_TYPES;
+  type?: GESTURES_TYPES | null;
   position?: IPosition;
   onClick?: (choice: GESTURES_TYPES) => void;
 }
@@ -28,20 +28,20 @@ const GestureWrapper: FC<IGestureWrapper> = ({type, position, onClick}: IGesture
       case GESTURES.SCISSORS:
         return {image: scissors, className: styles.scissors};
       default:
-        return {image: paper, className: styles.paper};
+        return {image: '', className: ''};
     }
   }, [type]);
 
   const handleOnClick = () => {
-    onClick && onClick(type);
+    if (onClick && type) onClick && onClick(type);
   }
 
   return (
     <div
-      className={`${styles.gestureWrapper} ${typeStyle.className}`} style={position}
+      className={`${styles.gestureWrapper} ${!type ? styles.generateChoice : ''} ${typeStyle.className}`} style={position}
       {...handleOnClick && {onClick: handleOnClick}}
     >
-      <img src={typeStyle.image} alt={type}/>
+      {type && <img src={typeStyle.image} alt={type}/>}
     </div>
   )
 }

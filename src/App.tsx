@@ -20,7 +20,7 @@ function App() {
       <ScorePanel score={score}/>
       <SelectionPanel addPoint={handleAddPoint} resetGame={resetGame}/>
       <div className="rules-wrapper">
-        <button onClick={handleRulesModal}>Rules</button>
+        <button className="gradient" onClick={handleRulesModal}>Rules</button>
       </div>
       {isOpenRulesModal}
       <RulesModal toggleClose={handleRulesModal} isOpen={isOpenRulesModal}/>
