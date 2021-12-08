@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
 
+  &.none {display: none}
   & > div {
     background-image: url("../../images/bg-triangle.svg");
     background-repeat: no-repeat;

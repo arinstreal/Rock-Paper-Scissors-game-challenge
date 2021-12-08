@@ -39,7 +39,7 @@ const ResultsMode: FC<IResultsMode> = ({userChoice, resetUserChoice, addUserPoin
     if (botChoice) {
       setTimeout(() => {
         getWinner();
-      }, 500);
+      }, 100);
     }
   }, [botChoice]);
 
