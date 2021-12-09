@@ -1,15 +1,31 @@
+$desktop: 1366px;
+
 .selectionPanel {
   margin-top: 30px;
   display: flex;
   justify-content: center;
 
-  &.none {display: none}
+  &.none {
+    display: none
+  }
+
   & > div {
-    background-image: url("../../images/bg-triangle.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     position: relative;
-    padding: 104px;
+    margin-top: 64px;
+    padding: 74px 44px 44px;
+    text-align: center;
+
+    .triangle {
+      width: 220px;
+      @media (min-width: $desktop) {
+        width: auto;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 0;
+      padding: 104px;
+    }
 
     & > div {
       position: absolute;

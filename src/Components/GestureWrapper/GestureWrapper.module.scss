@@ -1,3 +1,5 @@
+$desktop: 1366px;
+
 .gestureWrapper {
   background-color: var(--white-color);
   height: 134px;
@@ -8,7 +10,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  @media (min-width: var(--desktop)) {
+  @media (min-width: $desktop) {
     width: 204px;
     height: 204px;
   }
@@ -58,7 +60,7 @@
     position: absolute;
     border-radius: 50%;
     background-color: white;
-    @media (min-width: var(--desktop)) {
+    @media (min-width: $desktop) {
       height: calc(100% - 48px);
       width: calc(100% - 48px);
     }

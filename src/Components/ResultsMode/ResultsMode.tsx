@@ -49,6 +49,7 @@ const ResultsMode: FC<IResultsMode> = ({userChoice, resetUserChoice, addUserPoin
   }
 
   return (
+    <div>
     <div className={styles.resultsMode}>
       <div className={styles.choiceWrapper}>
         <span>You picked</span>
@@ -56,11 +57,17 @@ const ResultsMode: FC<IResultsMode> = ({userChoice, resetUserChoice, addUserPoin
       </div>
       <div className={styles.resultWrapper}>
         <div>{result}</div>
-        <button onClick={handlePlayAgain}>Play again</button>
+        <button className="secondary" onClick={handlePlayAgain}>Play again</button>
       </div>
       <div className={styles.choiceWrapper}>
         <span>The house picked</span>
         <GestureWrapper type={botChoice}/>
+      </div>
+
+    </div>
+      <div className={`${styles.resultWrapper} ${styles.mobile}`}>
+        <div>{result}</div>
+        <button className="secondary" onClick={handlePlayAgain}>Play again</button>
       </div>
     </div>
   )

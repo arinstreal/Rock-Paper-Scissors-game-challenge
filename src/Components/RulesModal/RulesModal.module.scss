@@ -1,11 +1,14 @@
+$dekstop: 1366px;
+
 .rulesModal {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: none;
   z-index: 1000;
+
 
   &:before {
     content: '';
@@ -25,14 +28,26 @@
     margin: auto;
     background-color: var(--white-color);
     padding: 36px 32px;
-    border-radius: 8px;
     max-width: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @media (min-width: $dekstop) {
+      height: auto;
+      border-radius: 8px;
+      align-items: normal;
+    }
   }
 
   .header {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 32px;
+    justify-content: center;
+    @media (min-width: $dekstop) {
+      justify-content: space-between;
+    }
 
     span {
       text-transform: uppercase;
@@ -41,8 +56,24 @@
       font-weight: 700;
     }
 
-    .closeIcon {
-      cursor: pointer;
+  }
+
+  .closeIcon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+
+    &:not(.mobile) {
+      display: none;
+      @media (min-width: $dekstop) {
+        display: block;
+      }
+    }
+
+    &.mobile {
+      @media (min-width: $dekstop) {
+        display: none;
+      }
     }
   }
 }

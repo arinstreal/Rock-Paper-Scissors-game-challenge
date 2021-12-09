@@ -49,11 +49,20 @@ button {
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
+  &.secondary {
+    background-color: #F8FBFF;
+    border-color: #F8FBFF;
+    color: var(--header-outline-color);
+  }
 }
 
 .rules-wrapper {
   margin-top: auto;
   margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 1366px) {
+    margin-right: 0;
+  }
 }
 
 span {

@@ -16,6 +16,7 @@ const RulesModal: FC<IRulesModal> = ({isOpen, toggleClose}: IRulesModal) => {
           <span>Rules</span><img className={styles.closeIcon} onClick={toggleClose} alt="close" src={closeIcon}/>
         </div>
         <img alt="rules" src={rules}/>
+        <img className={`${styles.closeIcon} ${styles.mobile}`} onClick={toggleClose} alt="close" src={closeIcon}/>
       </div>
     </div>
   )
